@@ -1,5 +1,12 @@
 package main
 
+import (
+	"encoding/json"
+	"io/ioutil"
+
+	"github.com/gofiber/fiber/v2"
+)
+
 type Products struct {
 	Products []Product `json:"products"`
 }
@@ -20,4 +27,11 @@ type Price struct {
 
 type Category struct {
 	Name string
+}
+
+func getProducts(c *fiber.Ctx) error {
+	file, _ := ioutil.ReadFile("products.json")
+	products := Products{}
+	_ = json.Unmarshal([]byte(file), &products)
+	return c.JSON(products)
 }
