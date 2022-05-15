@@ -15,8 +15,8 @@
         },
         {
             "id": "0000002",
-            "name": "Bezrękawnik",
-            "description": "Bawełniany bezrękawnik z dekoltem w szpic.",
+            "name": "Top",
+            "description": "Bawełniany top z dekoltem.",
             "picture": "/static/img/products/tank-top.jpg",
             "price": {
                 "units": 18,
@@ -57,7 +57,7 @@
             "id": "0000005",
             "name": "Suszarka do włosów",
             "description": "Ta lekka suszarka ma 3 ustawienia temperatury i prędkości. Idealna na podróży.",
-            "picture": "/static/img/products/włosydryer.jpg",
+            "picture": "/static/img/products/hairdryer.jpg",
             "price": {
                 "units": 24,
                 "nanos": 990000000
