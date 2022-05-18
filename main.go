@@ -7,6 +7,7 @@ import (
 func getApp() *fiber.App {
 	app := fiber.New()
 	app.Get("/api/v1/products", getProducts)
+	app.Get("/api/v1/product/:productId", getProduct)
 	return app
 }
 

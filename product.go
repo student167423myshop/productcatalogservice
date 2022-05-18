@@ -35,3 +35,21 @@ func getProducts(c *fiber.Ctx) error {
 	_ = json.Unmarshal([]byte(file), &products)
 	return c.JSON(products)
 }
+
+func getProduct(c *fiber.Ctx) error {
+	file, _ := ioutil.ReadFile("db/products.json")
+	products := Products{}
+	var product Product
+	founded := false
+	_ = json.Unmarshal([]byte(file), &products)
+	for _, p := range products.Products {
+		if c.Params("productId") == p.Id {
+			product = p
+			founded = true
+		}
+	}
+	if founded == false {
+		return fiber.ErrNotFound
+	}
+	return c.JSON(product)
+}
