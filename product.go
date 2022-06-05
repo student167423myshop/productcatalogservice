@@ -27,7 +27,7 @@ type Price struct {
 	Nanos int `json:"nanos"`
 }
 
-func getMuxProducts(w http.ResponseWriter, r *http.Request) {
+func getProducts(w http.ResponseWriter, r *http.Request) {
 	json, err := ioutil.ReadFile("db/products.json")
 	if err != nil {
 		fmt.Println(err)
@@ -37,7 +37,7 @@ func getMuxProducts(w http.ResponseWriter, r *http.Request) {
 	w.Write(json)
 }
 
-func getMuxProduct(w http.ResponseWriter, r *http.Request) {
+func getProduct(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	productId := vars["productId"]
 
