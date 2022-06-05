@@ -28,7 +28,11 @@ type Price struct {
 }
 
 func getMuxProducts(w http.ResponseWriter, r *http.Request) {
-	json, _ := ioutil.ReadFile("db/products.json")
+	json, err := ioutil.ReadFile("db/products.json")
+	if err != nil {
+		fmt.Println(err)
+		w.WriteHeader(http.StatusNotFound)
+	}
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(json)
 }
