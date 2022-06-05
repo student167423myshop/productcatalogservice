@@ -10,7 +10,7 @@ import (
 func TestRouter(t *testing.T) {
 	r := getRouter()
 	mockServer := httptest.NewServer(r)
-	resp, err := http.Get(mockServer.URL + "/api/v1/products")
+	resp, err := http.Get(mockServer.URL + "/products")
 
 	if err != nil {
 		t.Fatal(err)
@@ -26,7 +26,7 @@ func TestRouter(t *testing.T) {
 func TestRouterForNonExistentRoute(t *testing.T) {
 	r := getRouter()
 	mockServer := httptest.NewServer(r)
-	resp, err := http.Post(mockServer.URL+"/api/v1/products", "", nil)
+	resp, err := http.Post(mockServer.URL+"/products", "", nil)
 
 	if err != nil {
 		t.Fatal(err)
@@ -43,7 +43,7 @@ func TestJsonProductsDataRouterContentType(t *testing.T) {
 	r := getRouter()
 	mockServer := httptest.NewServer(r)
 
-	resp, err := http.Get(mockServer.URL + "/api/v1/products")
+	resp, err := http.Get(mockServer.URL + "/products")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -67,7 +67,7 @@ func TestJsonProductDataRouterContentType(t *testing.T) {
 	r := getRouter()
 	mockServer := httptest.NewServer(r)
 
-	resp, err := http.Get(mockServer.URL + "/api/v1/product/" + "0000001")
+	resp, err := http.Get(mockServer.URL + "/product/" + "0000001")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -91,7 +91,7 @@ func TestJsonProductDataRouterContentDataNotEmpty(t *testing.T) {
 	r := getRouter()
 	mockServer := httptest.NewServer(r)
 
-	resp, err := http.Get(mockServer.URL + "/api/v1/product/0000001")
+	resp, err := http.Get(mockServer.URL + "/product/0000001")
 	if err != nil {
 		t.Fatal(err)
 	}

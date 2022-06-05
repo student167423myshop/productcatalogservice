@@ -8,8 +8,8 @@ import (
 
 func getRouter() *mux.Router {
 	r := mux.NewRouter()
-	r.HandleFunc("/api/v1/products", getProducts).Methods(http.MethodGet)
-	r.HandleFunc("/api/v1/product/{productId}", getProduct).Methods(http.MethodGet)
+	r.HandleFunc("/products", getProducts).Methods(http.MethodGet)
+	r.HandleFunc("/product/{productId}", getProduct).Methods(http.MethodGet)
 	return r
 }
 
