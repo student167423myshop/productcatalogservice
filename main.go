@@ -1,17 +1,27 @@
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
-func getApp() *fiber.App {
-	app := fiber.New()
-	app.Get("/api/v1/products", getProducts)
-	app.Get("/api/v1/product/:productId", getProduct)
-	return app
+func getRouter() *mux.Router {
+	r := mux.NewRouter()
+	r.HandleFunc("/products", getProducts).Methods(http.MethodGet)
+	r.HandleFunc("/product/{productId}", getProduct).Methods(http.MethodGet)
+	return r
 }
 
 func main() {
-	app := getApp()
-	app.Listen(":3550")
+	r := getRouter()
+
+	srv := &http.Server{
+		Handler: r,
+		Addr:    ":3550",
+	}
+
+	if err := srv.ListenAndServe(); err != nil {
+		panic(err.Error())
+	}
 }
