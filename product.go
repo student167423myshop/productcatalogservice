@@ -10,21 +10,21 @@ import (
 )
 
 type Products struct {
-	Products []Product `json:"products"`
+	Products []Product `json:"Products"`
 }
 
 type Product struct {
-	Id          string   `json:"id,omitempty"`
-	Name        string   `json:"name,omitempty"`
-	Description string   `json:"description"`
-	Picture     string   `json:"picture"`
-	Price       Price    `json:"price,omitempty"`
-	Categories  []string `json:"categories"`
+	ProductId   string   `json:"ProductId,omitempty"`
+	Name        string   `json:"Name,omitempty"`
+	Description string   `json:"Description"`
+	PictureUrl  string   `json:"PictureUrl"`
+	Price       Price    `json:"Price,omitempty"`
+	Categories  []string `json:"Categories"`
 }
 
 type Price struct {
-	Units int `json:"units"`
-	Nanos int `json:"nanos"`
+	Units int `json:"Units"`
+	Nanos int `json:"Nanos"`
 }
 
 func getProducts(w http.ResponseWriter, r *http.Request) {
@@ -57,7 +57,7 @@ func getProduct(w http.ResponseWriter, r *http.Request) {
 	}
 
 	for _, p := range products.Products {
-		if productId == p.Id {
+		if productId == p.ProductId {
 			product = p
 			founded = true
 		}

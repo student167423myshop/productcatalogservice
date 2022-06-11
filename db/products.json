@@ -1,122 +1,122 @@
 {
     "products": [
         {
-            "id": "0000001",
-            "name": "Okulary",
-            "description": "Dodaj nowoczesny akcent swoim stylizacjom dzięki tym eleganckim okularom przeciwsłonecznym typu aviator.",
-            "picture": "/static/img/products/sunglasses.jpg",
-            "price": {
-                "units": 19,
-                "nanos": 990000000
+            "ProductId": "0000001",
+            "Name": "Okulary",
+            "Description": "Dodaj nowoczesny akcent swoim stylizacjom dzięki tym eleganckim okularom przeciwsłonecznym typu aviator.",
+            "PictureUrl": "/static/img/products/sunglasses.jpg",
+            "Price": {
+                "Units": 19,
+                "Nanos": 990000000
             },
-            "categories": [
+            "Categories": [
                 "akcesoria"
             ]
         },
         {
-            "id": "0000002",
-            "name": "Top",
-            "description": "Bawełniany top z dekoltem.",
-            "picture": "/static/img/products/tank-top.jpg",
-            "price": {
-                "units": 18,
-                "nanos": 990000000
+            "ProductId": "0000002",
+            "Name": "Top",
+            "Description": "Bawełniany top z dekoltem.",
+            "PictureUrl": "/static/img/products/tank-top.jpg",
+            "Price": {
+                "Units": 18,
+                "Nanos": 990000000
             },
-            "categories": [
+            "Categories": [
                 "ubrania",
                 "koszulki"
             ]
         },
         {
-            "id": "0000003",
-            "name": "Zegarek",
-            "description": "Ten zegarek ze stali nierdzewnej w złotym odcieniu będzie pasował do większości Twoich strojów.",
-            "picture": "/static/img/products/watch.jpg",
-            "price": {
-                "units": 109,
-                "nanos": 990000000
+            "ProductId": "0000003",
+            "Name": "Zegarek",
+            "Description": "Ten zegarek ze stali nierdzewnej w złotym odcieniu będzie pasował do większości Twoich strojów.",
+            "PictureUrl": "/static/img/products/watch.jpg",
+            "Price": {
+                "Units": 109,
+                "Nanos": 990000000
             },
-            "categories": [
+            "Categories": [
                 "akcesoria"
             ]
         },
         {
-            "id": "0000004",
-            "name": "Mokasyny",
-            "description": "Zgrabny dodatek do letniej garderoby.",
-            "picture": "/static/img/products/loafers.jpg",
-            "price": {
-                "units": 89,
-                "nanos": 990000000
+            "ProductId": "0000004",
+            "Name": "Mokasyny",
+            "Description": "Zgrabny dodatek do letniej garderoby.",
+            "PictureUrl": "/static/img/products/loafers.jpg",
+            "Price": {
+                "Units": 89,
+                "Nanos": 990000000
             },
-            "categories": [
+            "Categories": [
                 "buty"
             ]
         },
         {
-            "id": "0000005",
-            "name": "Suszarka do włosów",
-            "description": "Ta lekka suszarka ma 3 ustawienia temperatury i prędkości. Idealna na podróży.",
-            "picture": "/static/img/products/hairdryer.jpg",
-            "price": {
-                "units": 24,
-                "nanos": 990000000
+            "ProductId": "0000005",
+            "Name": "Suszarka do włosów",
+            "Description": "Ta lekka suszarka ma 3 ustawienia temperatury i prędkości. Idealna na podróży.",
+            "PictureUrl": "/static/img/products/hairdryer.jpg",
+            "Price": {
+                "Units": 24,
+                "Nanos": 990000000
             },
-            "categories": [
+            "Categories": [
                 "włosy",
                 "uroda"
             ]
         },
         {
-            "id": "0000006",
-            "name": "Świecznik",
-            "description": "Ten mały, ale misterny świecznik to doskonały prezent.",
-            "picture": "/static/img/products/candle-holder.jpg",
-            "price": {
-                "units": 18,
-                "nanos": 990000000
+            "ProductId": "0000006",
+            "Name": "Świecznik",
+            "Description": "Ten mały, ale misterny świecznik to doskonały prezent.",
+            "PictureUrl": "/static/img/products/candle-holder.jpg",
+            "Price": {
+                "Units": 18,
+                "Nanos": 990000000
             },
-            "categories": [
+            "Categories": [
                 "dekoracje",
                 "dom"
             ]
         },
         {
-            "id": "0000007",
-            "name": "Solniczka i pieprzniczka",
-            "description": "Dodaj smaku swojej kuchni.",
-            "picture": "/static/img/products/salt-and-pepper-shakers.jpg",
-            "price": {
-                "units": 18,
-                "nanos": 490000000
+            "ProductId": "0000007",
+            "Name": "Solniczka i pieprzniczka",
+            "Description": "Dodaj smaku swojej kuchni.",
+            "PictureUrl": "/static/img/products/salt-and-pepper-shakers.jpg",
+            "Price": {
+                "Units": 18,
+                "Nanos": 490000000
             },
-            "categories": [
+            "Categories": [
                 "kuchnia"
             ]
         },
         {
-            "id": "0000008",
-            "name": "Bambusowy szklany słoik",
-            "description": "Ten bambusowy szklany słoik może pomieścić 1,7l i jest idealny do każdej kuchni.",
-            "picture": "/static/img/products/bamboo-glass-jar.jpg",
-            "price": {
-                "units": 5,
-                "nanos": 490000000
+            "ProductId": "0000008",
+            "Name": "Bambusowy szklany słoik",
+            "Description": "Ten bambusowy szklany słoik może pomieścić 1,7l i jest idealny do każdej kuchni.",
+            "PictureUrl": "/static/img/products/bamboo-glass-jar.jpg",
+            "Price": {
+                "Units": 5,
+                "Nanos": 490000000
             },
-            "categories": [
+            "Categories": [
                 "kuchnia"
             ]
         },
         {
-            "id": "0000009",
-            "name": "Kubek",
-            "description": "Prosty kubek z musztardowym wnętrzem.",
-            "picture": "/static/img/products/mug.jpg",
-            "price": {
-                "units": 8,
-                "nanos": 990000000
+            "ProductId": "0000009",
+            "Name": "Kubek",
+            "Description": "Prosty kubek z musztardowym wnętrzem.",
+            "PictureUrl": "/static/img/products/mug.jpg",
+            "Price": {
+                "Units": 8,
+                "Nanos": 990000000
             },
-            "categories": [
+            "Categories": [
                 "kuchnia"
             ]
         }
